@@ -1,6 +1,6 @@
 {
   "name": "shipmentmentor",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "node.js SDK for ShipmentMentor API",
   "main": "index.js",
   "scripts": {

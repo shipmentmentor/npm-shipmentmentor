@@ -8,6 +8,11 @@ node.js SDK for ShipmentMentor API
 npm install shipmentmentor --save
 ```
 
+### Shipment Mentor API Authentication
+
+All ShipmentMentor API calls require API key for authorization.
+To get API key please signup on https://www.shipmentmentor.com. You can get API key from your account settings..
+
 ### Shipment Mentor API Status Codes:
 
 #### Processing Statuses 
@@ -74,7 +79,7 @@ Payload:
 ```json
 {
     "tid":"the package UPS, USPS or FedEx tracking number",
-    "title":"Veggie Pizza",
+    "title":"Your product name",
     "courier": null, 
     "orderId":"1234",
     "customer":"FirstName LastName",
@@ -97,11 +102,11 @@ Example:
 
 ```javascript
 var shipmentmentor = require( 'shipmentmentor' );
-var shm = new shipmentmentor('YOUR_API_TOKEN',"sandbox"); // "production"
+var shm = new shipmentmentor(process.env.SHIPMENTMENTOR_API_TOKEN,"sandbox"); // "production"
 
 var payload = {
         "tid":"Your UPS USPS OR FedEx tracking NUmber",
-        "title":"Some Title", 
+        "title":"Your product name", 
         "courier": null, 
         "orderId":"12345",
         "customer":"FirstName LastName",
@@ -126,7 +131,7 @@ Example:
 
 ```javascript
     var shipmentmentor = require( 'shipmentmentor' );
-    var shm = new shipmentmentor('YOUR_API_TOKEN',"sandbox"); // "production"
+    var shm = new shipmentmentor(process.env.SHIPMENTMENTOR_API_TOKEN,"sandbox"); // "production"
 
     var parsels=[];
     var origin = {
@@ -140,7 +145,7 @@ Example:
             "country": "US",
             "lat":34.032016,
             "long":-118.482805,
-            "phone": "8188081111",
+            "phone": "+18188081111",
             "email": "sam@example.com"                          
     }
 
@@ -155,7 +160,7 @@ Example:
             "country": "US",
             "lat":34.032016,
             "long":-118.482805,            
-            "phone": "8188082222",
+            "phone": "+18188082222",
             "email": "destination@example.com"       
     };
 
@@ -200,7 +205,7 @@ Example:
 
 ```javascript
     var shipmentmentor = require( 'shipmentmentor' );
-    var shm = new shipmentmentor('YOUR_API_TOKEN',"sandbox"); // "production"
+    var shm = new shipmentmentor(process.env.SHIPMENTMENTOR_API_TOKEN,"sandbox"); // "production"
 
     var payload = {
             "tid":"SHM123456789879",
