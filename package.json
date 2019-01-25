@@ -1,0 +1,35 @@
+{
+  "name": "shipmentmentor",
+  "version": "1.0.2",
+  "description": "node.js SDK for ShipmentMentor API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nsasoft/npm-shipmentmentor.git"
+  },
+  "keywords": [
+    "shipment",
+    "tracking",
+    "delivery",
+    "logistics",
+    "ecommerce"
+  ],
+  "author": "ShipmentMentor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nsasoft/npm-shipmentmentor/issues"
+  },
+  "homepage": "https://github.com/nsasoft/npm-shipmentmentor#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "ajv": "^6.7.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  }
+}
