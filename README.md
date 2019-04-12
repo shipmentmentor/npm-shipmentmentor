@@ -11,7 +11,7 @@ npm install shipmentmentor --save
 ### Shipment Mentor API Authentication
 
 All ShipmentMentor API calls require API key for authorization.
-To get API key please signup on https://www.shipmentmentor.com. You can get API key from your account settings..
+To get API key please signup on https://www.shipmentmentor.com. You can get API key from your account settings.
 
 ### Shipment Mentor API Status Codes:
 

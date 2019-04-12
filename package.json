@@ -1,6 +1,6 @@
 {
   "name": "shipmentmentor",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "node.js SDK for ShipmentMentor API",
   "main": "index.js",
   "scripts": {
@@ -28,8 +28,8 @@
     "mocha": "^5.2.0"
   },
   "dependencies": {
-    "ajv": "^6.7.0",
+    "ajv": "^6.10.0",
     "request": "^2.88.0",
-    "request-promise": "^4.2.2"
+    "request-promise": "^4.2.4"
   }
 }
